@@ -1,0 +1,140 @@
+
+:root {
+    --color-bg: #0a0a23;
+    --color-white: #eee;
+    --color-primary: #5a01a7;
+    --color-secondary: #00471b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 2rem; */
+}
+
+/* ######### LOGO ########## */
+#logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    /* background-color: aliceblue; */
+}
+
+#logo img {
+    height: 2rem;
+    margin: 0 auto;
+}
+
+/* ########## TITLE ######### */
+
+#title {
+    width: 100%;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 2rem 0;
+}
+
+/* ######### INPUT BOX ######### */
+#input-box {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0.8rem;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 5px blue; */
+}
+
+#input-box h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+/* #input-box .inputs {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+} */
+
+#input-box input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-primary);
+    font-size: 1.3rem;
+}
+
+#input-box #check-btn {
+    margin: 1em;
+    padding: 0.5em;
+    width: 5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+#input-box #check-btn:active {
+    background-color: #29004c;
+}
+
+#input-box p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    /* display: none; */
+}
+
+#input-box p span {
+    font-weight: 600;
+}
+
+
+/* ########## INFO BOX ######### */
+#info-box {
+    margin: 0 auto;
+    width: 70%;
+    padding: 1.1rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#info-box .bulb {
+    margin-right: 0.5rem;
+}
+
+#info-box .bulb img {
+    width: 1.8rem;
+}
+
+#info-box .text {
+    font-size: 1.4rem;
+}
+
+#info-box .text p span {
+    font-style: italic;
+}
