@@ -5,6 +5,8 @@ let outputField = document.getElementById('result');
 
 // console.log(inputField)
 
+document.getElementById('check-btn').addEventListener('click', isPalindrome);
+
 function isPalindrome () {
     let textInput = inputField.value.toLowerCase();
 
@@ -16,8 +18,8 @@ function isPalindrome () {
     // removeSpecialCharacters(textInput)
     let text = textInput.replace(/[^a-zA-Z0-9]/g, '');
 
-    console.log(textInput)
-    console.log(text)
+    // console.log(textInput)
+    // console.log(text)
 
     for (let i = 0; i < text.length; i++) {
         if (text[i] != text[text.length - 1 - i]) {
